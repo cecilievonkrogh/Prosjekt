@@ -1,0 +1,22 @@
+.Gridvalg{
+  grid-gap: 5%;
+}
+#tekst{
+  background-color: #80aaed;
+  border-style: solid;
+}
+
+
+.valg img{
+  border-style: solid;
+  height: 100%;
+}
+
+@media(max-width: 800px){
+  .Gridvalg{
+    grid-gap: 2%;
+  }
+  #rad3{
+    grid-row: 3;
+  }
+}

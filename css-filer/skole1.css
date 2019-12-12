@@ -1,0 +1,89 @@
+h2{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  z-index: 2;
+  font-size: 70px;
+  width: 100%;
+  text-align: center;
+}
+
+.Gridvalg{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  grid-gap: 2%;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.valg img{
+  width: 100%;
+}
+
+.valg iframe{
+  width: 100%;
+  height: 400px;
+}
+
+.valg a{
+  text-decoration: none;
+  color: black;
+}
+
+.valg h3{
+  text-align: center
+}
+
+#mediaoverskrift{
+  color: grey;
+  left: 55%;
+}
+
+@media(max-width: 800px){
+  .Gridvalg{
+    grid-template-columns: 1fr;
+  }
+  #rad1{
+    grid-row: 1;
+  }
+  #rad2{
+    grid-row:2;
+  }
+  #rad3{
+    grid-row: 3;
+  }
+  #rad4{
+    grid-row: 4;
+  }
+  #rad5{
+    grid-row: 5;
+  }
+  #rad6{
+    grid-row: 6;
+  }
+  #rad1-mk{
+    grid-row: 1;
+  }
+  #rad2-mk{
+    grid-row: 2;
+  }
+  #rad3-mk{
+    grid-row: 3;
+  }
+  #rad4-mk{
+    grid-row: 4;
+  }
+  h2{
+  font-size: 30px;
+  top: 20%
+  }
+  #mediaoverskrift{
+    left:50%;
+    color: grey;
+    top: 15%;
+  }
+}

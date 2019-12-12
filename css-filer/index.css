@@ -1,0 +1,155 @@
+body{
+  margin: 0px;
+  font-family:sans-serif;
+  background-color: aliceblue;
+}
+
+.gridcontainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: white;
+  opacity: 90%;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  margin-right: 40px;
+}
+nav a:hover{
+  font-size: 20px;
+}
+
+nav{
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+  padding: 15px;
+
+}
+h1{
+  margin: 0px;
+  font-size: 30px;
+  margin-left: 100px;
+  color: black;
+  text-decoration: none;
+}
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top: 0px;
+}
+
+#forside{
+  height: 550px;
+  width: 100%;
+  border-style:outset;
+  border-top: hidden;
+  border-right: hidden;
+  border-left: hidden;
+  border-width: 7px;
+}
+
+p{
+  line-height: 1.5;
+}
+
+.footerGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+footer{
+  margin-top: 5%;
+  padding: 2%;
+  background-color: grey;
+  color: white;
+}
+footer p{
+  line-height: 0;
+}
+
+footer h4{
+  text-align: center;
+}
+
+footer iframe{
+  width: 300px;
+  height: 200px;
+}
+
+footer a{
+  text-decoration: none;
+}
+
+#adresse {
+  margin-top: 2px;
+}
+
+.overskrift{
+  text-decoration: none;
+}
+
+#rad6-footer img{
+  width: 70px;
+}
+
+@media (max-width: 800px){
+  nav{
+    flex-direction: column;
+  }
+  nav a{
+    border-bottom: solid;
+    width: 100%;
+    text-align: center;
+  }
+  .footer iframe{
+    width: 150px;
+    height: 100px;
+  }
+  .footerGrid{
+    margin-left: 5%;
+    margin-right: 5%;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
+  }
+  p{
+    font-size: 16px;
+  }
+  h1{
+    margin-left: 30px;
+  }
+  #rad1-footer{
+    grid-row: 1;
+  }
+  #rad2-footer{
+    grid-row:2;
+  }
+  #rad3-footer{
+    grid-row:3;
+  }
+  #rad4-footer{
+    grid-row:4;
+  }
+  #rad5-footer{
+    grid-row:5;
+  }
+  #rad6-footer{
+    grid-row:6;
+  }
+  #rad6-footer img{
+    width: 50px;
+  }
+  #forside{
+    height: auto;
+  }
+}

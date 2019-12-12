@@ -1,0 +1,201 @@
+#intro{
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #fffaa1;
+  border-style: solid;
+  border-color: black;
+  color: black;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 2%;
+
+
+}
+
+#slagord p{
+  border-bottom: solid;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+
+}
+.gridboks{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 30px;
+  grid-gap: 2%;
+}
+
+.grid{
+  border-style: solid;
+  background-color: white;
+  align-items: center;
+}
+
+.grid img{
+  width: 100px;
+  margin: auto;
+  display: block;
+}
+
+.grid p{
+  text-align: center;
+}
+
+#kart{
+  position: relative;
+  text-align: center;
+}
+
+#kart img{
+  margin-top: 10%;
+  width: 50%;
+}
+
+#kart p{
+  border-style: double;
+  border-width: 3px;
+  border-color: #56b8f5;
+  background-color: lightblue;
+  color: black;
+  font-size: 10px;
+}
+
+#kart p:hover{
+  font-size: 15px;
+}
+
+#lofoten1{
+  position: absolute;
+  left: 44%;
+  top: 33%;
+}
+
+#nordfjord1{
+  position: absolute;
+  left: 25%;
+  top: 69%;
+}
+
+#risøy1{
+  position: absolute;
+  top: 90%;
+  left: 32%;
+}
+
+#bakketun1{
+  position: absolute;
+  left: 37%;
+  top: 60%;
+}
+
+#stavern1{
+  position: absolute;
+  left: 34%;
+  top: 89%;
+}
+
+#sandefjord1{
+  position: absolute;
+  left: 36%;
+  top: 87%;
+}
+
+#sund1{
+  position: absolute;
+  left: 40%;
+  top: 58%;
+}
+
+#sagavoll1{
+  position: absolute;
+  left: 32%;
+  top: 84%;
+}
+
+#grenland1{
+  position: absolute;
+  left: 32%;
+  top: 87%;
+}
+
+#oslofjord1{
+  position: absolute;
+  left: 36%;
+  top: 84%;
+}
+
+#åsane1{
+  position: absolute;
+  left: 27%;
+  top: 76%;
+}
+
+#toneheim1{
+  position: absolute;
+  left: 37%;
+  top: 80%;
+}
+
+@media(max-width: 800px){
+  .gridboks{
+    width: 330px;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  #kart{
+    height: 400px;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  #kart img{
+    filter: blur(5px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+  }
+
+  #kart p{
+    font-size: 14px;
+    position: relative;
+    left: 0;
+    width: 100px;
+    margin: auto;
+    text-decoration: none;
+    margin-top: 5px;
+  }
+
+  #kart p:hover{
+    font-size: 10px;
+  }
+
+  #kart a{
+    text-decoration: none;
+  }
+}
+
+@media(max-width: 600px){
+  #kart{
+    height: 300px;
+  }
+  #kart p{
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 500px){
+  #kart{
+    height: 250px;
+  }
+  #kart p{
+    font-size: 7px;
+  }
+}
